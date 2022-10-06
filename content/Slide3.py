@@ -85,28 +85,44 @@ a = st.radio('Select one:', ["dogs", "cats"])
 st.markdown(a)
 st.header("st.selectbox")
 st.text("Display a select widget.")
-code = '''st.selectbox('Pick one', ['cats', 'dogs'])'''
+code = '''b=st.selectbox('Pick one', ['cats', 'dogs'])
+st.markdown(b)
+'''
 st.code(code, language='python')
-st.selectbox('Pick one', ['cats', 'dogs'])
+b=st.selectbox('Pick one', ['cats', 'dogs'])
+st.markdown(b)
+
 
 st.header("st.button")
 st.text("Display a button widget.")
-code = '''st.button('Click me')'''
+code = '''clicked=st.button('Click me')
+if clicked:
+    st.markdown("you clicked on the button")'''
 st.code(code, language='python')
-st.button('Click me')
+clicked=st.button('Click me')
+if clicked:
+    st.markdown("you clicked on the button")
 
 st.header("st.checkbox")
 st.text("Display a checkbox widget.")
-code = '''st.checkbox('I agree')'''
+code = '''checked=st.checkbox('I agree')
+if checked:
+    st.markdown("i agree to the terms and conditions and the privacy policy")
+'''
 st.code(code, language='python')
-st.checkbox('I agree')
+checked=st.checkbox('I agree')
+if checked:
+    st.markdown("I agree to the terms and conditions and the privacy policy")
 
 st.header("st.multiselect")
 st.text("Display a multiselect widget.")
-code = '''st.multiselect('Buy', ['milk', 'apples', 'potatoes'])'''
+code = '''selected_list=st.multiselect('Buy', ['milk', 'apples', 'potatoes'])
+if selected_list:
+    st.markdown(selected_list)'''
 st.code(code, language='python')
-st.multiselect('Buy', ['milk', 'apples', 'potatoes'])
-
+selected_list=st.multiselect('Buy', ['milk', 'apples', 'potatoes'])
+if selected_list:
+    st.markdown(selected_list)
 
 st.header("st.slider")
 st.text("Display a slider widget.")
@@ -116,15 +132,19 @@ st.slider('Pick a number', 0, 100)
 
 st.header("st.select_slider")
 st.text("Display a slider widget to select items from a list.")
-code = '''st.select_slider('Pick a size', ['S', 'M', 'L'])'''
+code = '''shirt_size=st.select_slider('Pick a size', ['S', 'M', 'L'])
+st.markdown("you choose:"+shirt_size)'''
 st.code(code, language='python')
-st.select_slider('Pick a size', ['S', 'M', 'L'])
+shirt_size=st.select_slider('Pick a size', ['S', 'M', 'L'])
+st.markdown("you choose:"+shirt_size)
 
 st.header("st.text_input")
 st.text("Display a single-line text input widget.")
-code = '''st.text_input('First name')'''
+code = '''name=st.text_input('First name')
+st.markdown("Your name is:" + name)'''
 st.code(code, language='python')
-st.text_input('First name')
+name=st.text_input('First name')
+st.markdown("Your name is:" + name)
 
 st.header("st.number_input")
 st.text("Display a numeric input widget.")
