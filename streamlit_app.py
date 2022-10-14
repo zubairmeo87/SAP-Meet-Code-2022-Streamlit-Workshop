@@ -14,7 +14,7 @@ md_files = sorted([int(x.strip('Slide').strip('.py')) for x in glob.glob1('conte
 # Logo and Navigation
 col1, col2, col3 = st.columns((1,4,1))
 with col2:
-    st.image(Image.open('Logo_Tunup.png'))
+    st.image(Image.open('Logo_Tunup.PNG'))
 st.markdown('# Introduction to the Streamlit framework')
 
 days_list = [f'Slide {x}' for x in md_files]
