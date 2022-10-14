@@ -6,7 +6,7 @@ import pickle
 
 st.header("Project:")
 st.subheader("Exploration Data Analysis:")
-st.image("content/images/titanic.PNG")
+st.image("content/images/titanic.png")
 
 data=pd.read_csv('content/figures/train.csv')
 Pclass_filter = st.selectbox("Select the Class:",  ["all",1,2,3] )
