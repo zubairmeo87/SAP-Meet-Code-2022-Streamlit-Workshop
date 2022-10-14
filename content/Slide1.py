@@ -1,9 +1,9 @@
 st.header("Tun'Up Munich e.V. presentation")
 image = Image.open('content/images/slide 1.png')
 st.image(image)
-image = Image.open('content/images/slide2.png')
+image = Image.open('content/images/slide2.PNG')
 st.image(image)
-image = Image.open('content/images/slide 3.PNG')
+image = Image.open('content/images/slide 3.png')
 st.image(image)
 st.text("""Tun'Up Munich e.V. is a social and humanitarian non-profit organization dedicated to improving the educational environment in Tunisia and empower the youthful generation.
 We, members of Tun'Up Munich e.V., believe that education is the key to growth and success. We believe investing in it is investing in our future. 
