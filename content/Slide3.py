@@ -62,7 +62,7 @@ st.table(df)
 
 st.header("st.image")
 st.text("Display an image or list of images.")
-code = '''st.image("Logo_Tunup.png")'''
+code = '''st.image("Logo_Tunup.PNG")'''
 st.code(code, language='python')
 st.image("Logo_Tunup.png")
 
