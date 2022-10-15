@@ -109,3 +109,11 @@ b=st.number_input("Insert a number(b):",value=5)
 result={"Operation":["a+b","a-b","a*b","a/b","a**b"],"Result":[a+b,a-b,a*b,a/b,a**b]}
 df=pd.DataFrame(result)
 st.dataframe(df)
+
+with st.form(key='columns_in_form',clear_on_submit=True): 
+    st.write('Please help us improve!')
+    rating=st.radio("Please rate the app",('1','2','3','4','5'),horizontal=True,index=4)    
+    text=st.text_input(label='Please leave your feedback here') 
+    submitted = st.form_submit_button('Submit')
+    if submitted:
+      st.success('Thanks for your feedback!')
