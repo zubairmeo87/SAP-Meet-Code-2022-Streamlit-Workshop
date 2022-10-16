@@ -1,3 +1,26 @@
+st.header("Introduction to Streamlit")
+st.markdown("founded in 2018 by ex Google engineers(Adrien Treuille, Amanda Kelly and Thiago Teixeira)")
+st.markdown("- #1: Embrace Python scripting:  run from top to bottom(no hidden state). If you know how to write Python scripts, you can write Streamlit apps.")
+st.markdown("- #2: no callbacks! Every interaction simply reruns the script from top to bottom. This approach leads to really clean code:")
+code = '''x = st.slider('x')
+st.write(x, 'squared is', x * x)'''
+st.code(code, language='python')
+x = st.slider('x')
+st.write(x, 'squared is', x * x)
+st.markdown("- #3: Reuse data and computation:Streamlit introduces a cache primitive that behaves like a persistent, immutable-by-default, data store that lets Streamlit apps safely and effortlessly reuse information")
+code='''data=pd.read_csv("https://streamlit-self-driving.s3-us-west-2.amazonaws.com/labels.csv.gz",nrows=1000)
+desired_label = st.selectbox('Filter to:', ['car', 'truck'])
+st.write(data[data.label == desired_label])'''
+st.code(code, language='python')
+data=pd.read_csv("https://streamlit-self-driving.s3-us-west-2.amazonaws.com/labels.csv.gz",nrows=1000)
+desired_label = st.selectbox('Filter to:', ['car', 'truck'])
+st.write(data[data.label == desired_label])
+st.markdown("In short, Streamlit works like this:")
+st.markdown("1-The entire script is run from scratch for each user interaction.")
+st.markdown("2- Streamlit assigns each variable an up-to-date value given widget states.")
+st.markdown("3- Caching allows Streamlit to skip redundant data fetches and computation.")
+
+
 st.header("Getting Started with streamlit")
 
 st.markdown("""
