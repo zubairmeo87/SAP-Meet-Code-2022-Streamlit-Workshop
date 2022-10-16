@@ -17,7 +17,7 @@ st.code(code, language='python')
 st.markdown(""" - Finally, run the below command:""")
 st.code("streamlit run main.py", language='powershell')
 
-st.header("core principles of Streamlit")
+st.header("Core principles of Streamlit")
 st.markdown("- #1: Embrace Python scripting:  run from top to bottom(no hidden state). If you know how to write Python scripts, you can write Streamlit apps.")
 st.markdown("- #2: no callbacks! Every interaction simply reruns the script from top to bottom. This approach leads to really clean code:")
 code = '''x = st.slider('x')
