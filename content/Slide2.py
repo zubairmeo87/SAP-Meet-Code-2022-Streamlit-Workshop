@@ -1,5 +1,23 @@
-st.header("Introduction to Streamlit")
-st.markdown("founded in 2018 by ex Google engineers(Adrien Treuille, Amanda Kelly and Thiago Teixeira)")
+st.header("Getting Started with streamlit")
+
+st.markdown("""
+- Streamlit is an open source app framework in Python language. It helps us create web apps for data science and machine learning in a short time. 
+- Founded in 2018 by ex Google engineers(Adrien Treuille, Amanda Kelly and Thiago Teixeira
+- To install streamlit, you can use the following pip command on the console
+""")
+st.code("pip install streamlit", language='powershell')
+st.markdown("""
+- To get started, just create an empty python file as main.py and paste the below code:
+""")
+
+code = '''import streamlit as st :
+st.write("Hello! Streamlit")'''
+st.code(code, language='python')
+
+st.markdown(""" - Finally, run the below command:""")
+st.code("streamlit run main.py", language='powershell')
+
+st.header("core principles of Streamlit")
 st.markdown("- #1: Embrace Python scripting:  run from top to bottom(no hidden state). If you know how to write Python scripts, you can write Streamlit apps.")
 st.markdown("- #2: no callbacks! Every interaction simply reruns the script from top to bottom. This approach leads to really clean code:")
 code = '''x = st.slider('x')
@@ -19,22 +37,3 @@ st.markdown("In short, Streamlit works like this:")
 st.markdown("1-The entire script is run from scratch for each user interaction.")
 st.markdown("2- Streamlit assigns each variable an up-to-date value given widget states.")
 st.markdown("3- Caching allows Streamlit to skip redundant data fetches and computation.")
-
-
-st.header("Getting Started with streamlit")
-
-st.markdown("""
-- Streamlit is an open source app framework in Python language. It helps us create web apps for data science and machine learning in a short time. 
-- To install streamlit, you can use the following pip command on the console
-""")
-st.code("pip install streamlit", language='powershell')
-st.markdown("""
-- To get started, just create an empty python file as main.py and paste the below code:
-""")
-
-code = '''import streamlit as st :
-st.write("Hello! Streamlit")'''
-st.code(code, language='python')
-
-st.markdown(""" - Finally, run the below command:""")
-st.code("streamlit run main.py", language='powershell')
