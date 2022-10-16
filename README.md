@@ -1,5 +1,5 @@
 # SAP-Meet-Code-2022-Streamlit-Workshop-
-pip install -r requirement.txt
+pip install -r requirements.txt
 
 
 
