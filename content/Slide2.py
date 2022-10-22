@@ -1,4 +1,3 @@
-st.header("Getting Started with streamlit")
 st.subheader("Quick introduction:")
 st.text("Streamlit, an app framework built for ML engineers and its main purpose is to turn Python Scripts into Beautiful ML Tools.")
 st.subheader("Quick history:")
@@ -12,6 +11,7 @@ st.markdown("""
 -	Article from streamlit founders: https://towardsdatascience.com/coding-ml-tools-like-you-code-ml-models-ddba3357eace 
 - Interesting article from DataCamp: https://www.datacamp.com/tutorial/streamlit 
 """)
+st.subheader("Getting Started with streamlit")
 st.markdown("""
 - Streamlit is an open source app framework in Python language. It helps us create web apps for data science and machine learning in a short time. 
 - Founded in 2018 by ex Google engineers(Adrien Treuille, Amanda Kelly and Thiago Teixeira
