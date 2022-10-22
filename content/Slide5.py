@@ -4,5 +4,4 @@ st.text("""- Website: http://www.tunup.org/
 - Email: contact.munich@tunup.org""")
 st.header("Contact Presenters:")
 st.text("""- Hachem: hachem.sfar@tunup.org
-- Seif: seifeddine.ayadi@tunup.org
-- Iheb: ihebeddine.riahi@supcom.tn""")
+- Seif: seifeddine.ayadi@tunup.org""")
