@@ -3,5 +3,4 @@ click==8.0
 streamlit
 matplotlib
 seaborn
-lxml
 sklearn
