@@ -3,4 +3,4 @@ click==8.0
 streamlit
 matplotlib
 seaborn
-sklearn
+scikit-learn
